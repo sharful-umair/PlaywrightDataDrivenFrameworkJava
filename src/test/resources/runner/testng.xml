@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Data Driven Framework Playwright">
+
+    <listeners>
+        <listener class-name="org.sharfulumair.extentlisteners.ExtentListeners"/>
+    </listeners>
+
+    <test name="Bank Manager Suite Test">
+        <classes>
+            <class name="org.sharfulumair.testcases.BankManagerLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Add Customer Test">
+        <classes>
+            <class name="org.sharfulumair.testcases.AddCustomerTest"/>
+        </classes>
+    </test>
+
+    <test name="Open Account Test">
+        <classes>
+            <class name="org.sharfulumair.testcases.OpenAccountTest"/>
+        </classes>
+    </test>
+
+</suite>
