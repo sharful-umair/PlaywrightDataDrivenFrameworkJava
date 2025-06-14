@@ -22,6 +22,12 @@ public class MonitoringMail
 
     //public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody, String attachmentPath, String attachmentName) throws MessagingException, AddressException
 
+    static {
+        // Force Java to use only secure TLS protocols (Java 11+ and Java 21 compatibility)
+        System.setProperty("https.protocols", "TLSv1.2,TLSv1.3");
+        System.setProperty("jdk.tls.client.protocols", "TLSv1.2,TLSv1.3");
+    }
+
     public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody)
             throws MessagingException, AddressException {
 
