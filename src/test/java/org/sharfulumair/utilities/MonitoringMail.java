@@ -22,68 +22,50 @@ public class MonitoringMail
 
     //public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody, String attachmentPath, String attachmentName) throws MessagingException, AddressException
 
-    public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody) throws MessagingException, AddressException
+    public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody)
+            throws MessagingException, AddressException {
 
-    {
         boolean debug = false;
-        Properties props = new Properties();
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.EnableSSL.enable","true");
-        props.put("mail.smtp.auth", "true");
 
+        Properties props = new Properties();
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", mailServer);
+        props.put("mail.smtp.port", "587");
         props.put("mail.debug", "true");
 
-        props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.setProperty("mail.smtp.socketFactory.fallback", "false");
-        props.setProperty("mail.smtp.port", "465");
-        props.setProperty("mail.smtp.socketFactory.port", "465");
-
-
         Authenticator auth = new SMTPAuthenticator();
-        Session session = Session.getDefaultInstance(props, auth);
-
+        Session session = Session.getInstance(props, auth);
         session.setDebug(debug);
 
-        try
-        {
-
-
-            Transport bus = session.getTransport("smtp");
-            bus.connect();
+        try {
             Message message = new MimeMessage(session);
 
-            //X-Priority values are generally numbers like 1 (for highest priority), 3 (normal) and 5 (lowest).
-
+            // Priority: 1 (highest), 3 (normal), 5 (lowest)
             message.addHeader("X-Priority", "1");
             message.setFrom(new InternetAddress(from));
+
             InternetAddress[] addressTo = new InternetAddress[to.length];
-            for (int i = 0; i < to.length; i++)
+            for (int i = 0; i < to.length; i++) {
                 addressTo[i] = new InternetAddress(to[i]);
-            message.setRecipients(Message.RecipientType .TO, addressTo);
+            }
+
+            message.setRecipients(Message.RecipientType.TO, addressTo);
             message.setSubject(subject);
 
-
             BodyPart body = new MimeBodyPart();
+            body.setContent(messageBody, "text/html");
 
-            // body.setText(messageBody);
-            body.setContent(messageBody,"text/html");
-
-            //   BodyPart attachment = new MimeBodyPart();
-            //  DataSource source = new FileDataSource(attachmentPath);
-            //   attachment.setDataHandler(new DataHandler(source));
-            //  attachment.setFileName(attachmentName);
             MimeMultipart multipart = new MimeMultipart();
             multipart.addBodyPart(body);
-            //  multipart.addBodyPart(attachment);
-            message.setContent(multipart);
-            Transport.send(message);
-            System.out.println("Sucessfully Sent mail to All Users");
-            bus.close();
 
-        }
-        catch (MessagingException mex)
-        {
+            message.setContent(multipart);
+
+            // Send message
+            Transport.send(message);
+            System.out.println("Successfully sent mail to all users");
+
+        } catch (MessagingException mex) {
             mex.printStackTrace();
         }
     }
