@@ -1,29 +1,25 @@
 package org.sharfulumair.utilities;
 
 import java.util.Properties;
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.Authenticator;
-import javax.mail.BodyPart;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import jakarta.activation.DataHandler;
+import jakarta.activation.DataSource;
+import jakarta.activation.FileDataSource;
+import jakarta.mail.Authenticator;
+import jakarta.mail.BodyPart;
+import jakarta.mail.Message;
+import jakarta.mail.MessagingException;
+import jakarta.mail.PasswordAuthentication;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
+import jakarta.mail.internet.AddressException;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMultipart;
 
-public class MonitoringMail
-{
-
-    //public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody, String attachmentPath, String attachmentName) throws MessagingException, AddressException
+public class MonitoringMail {
 
     static {
-        // Force Java to use only secure TLS protocols (Java 11+ and Java 21 compatibility)
         System.setProperty("https.protocols", "TLSv1.2,TLSv1.3");
         System.setProperty("jdk.tls.client.protocols", "TLSv1.2,TLSv1.3");
     }
@@ -46,8 +42,6 @@ public class MonitoringMail
 
         try {
             Message message = new MimeMessage(session);
-
-            // Priority: 1 (highest), 3 (normal), 5 (lowest)
             message.addHeader("X-Priority", "1");
             message.setFrom(new InternetAddress(from));
 
@@ -67,7 +61,6 @@ public class MonitoringMail
 
             message.setContent(multipart);
 
-            // Send message
             Transport.send(message);
             System.out.println("Successfully sent mail to all users");
 
@@ -76,15 +69,11 @@ public class MonitoringMail
         }
     }
 
-    private class SMTPAuthenticator extends javax.mail.Authenticator
-    {
-
-        public PasswordAuthentication getPasswordAuthentication()
-        {
+    private class SMTPAuthenticator extends Authenticator {
+        public PasswordAuthentication getPasswordAuthentication() {
             String username = TestConfig.from;
             String password = TestConfig.password;
             return new PasswordAuthentication(username, password);
         }
     }
-
 }

@@ -1,36 +1,36 @@
-INFO    2025-06-14 13:44:33,897 [main] org.sharfulumair.testcases.OpenAccountTest  - Test Execution started !!!
-INFO    2025-06-14 13:44:33,905 [main] org.sharfulumair.testcases.OpenAccountTest  - OR Properties file loaded.
-INFO    2025-06-14 13:44:43,158 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Launching Chrome browser
-INFO    2025-06-14 13:44:45,201 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2025-06-14 13:44:45,274 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
-INFO    2025-06-14 13:44:45,277 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Finding an Element: addCustBtn_CSS
-INFO    2025-06-14 13:44:45,391 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Finding an Element: addCustBtn_CSS
-INFO    2025-06-14 13:44:48,881 [main] org.sharfulumair.testcases.AddCustomerTest  - Launching Chrome browser
-INFO    2025-06-14 13:44:50,382 [main] org.sharfulumair.testcases.AddCustomerTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2025-06-14 13:44:50,476 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
-INFO    2025-06-14 13:44:50,636 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : addCustBtn_CSS with selector: .btn.btn-lg.tab[ng-class='btnClass1']
-INFO    2025-06-14 13:44:50,742 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : firstname_CSS with selector: input[placeholder='First Name'] and entered value: Sharful
-INFO    2025-06-14 13:44:50,766 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : lastname_CSS with selector: input[placeholder='Last Name'] and entered value: Umair
-INFO    2025-06-14 13:44:50,797 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : postcode_CSS with selector: input[ng-model='postCd'] and entered value: 1234.0
-INFO    2025-06-14 13:44:54,862 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : addbtn_CSS with selector: button[type='submit']
-INFO    2025-06-14 13:44:56,826 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Chrome browser
-INFO    2025-06-14 13:44:58,347 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2025-06-14 13:44:58,427 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
-INFO    2025-06-14 13:44:58,557 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
-INFO    2025-06-14 13:44:58,813 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Harry Potter
-INFO    2025-06-14 13:44:58,823 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Rupee
-INFO    2025-06-14 13:45:02,951 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
-INFO    2025-06-14 13:45:04,640 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Firefox browser
-INFO    2025-06-14 13:45:09,662 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2025-06-14 13:45:09,916 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
-INFO    2025-06-14 13:45:10,187 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
-INFO    2025-06-14 13:45:10,354 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Ron Weasly
-INFO    2025-06-14 13:45:10,380 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Dollar
-INFO    2025-06-14 13:45:14,496 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
-INFO    2025-06-14 13:45:17,405 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Chrome browser
-INFO    2025-06-14 13:45:18,769 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2025-06-14 13:45:18,865 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
-INFO    2025-06-14 13:45:18,997 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
-INFO    2025-06-14 13:45:19,254 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Albus Dumbledore
-INFO    2025-06-14 13:45:19,267 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Dollar
-INFO    2025-06-14 13:45:23,373 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
+INFO    2025-06-14 14:39:31,576 [main] org.sharfulumair.testcases.OpenAccountTest  - Test Execution started !!!
+INFO    2025-06-14 14:39:31,577 [main] org.sharfulumair.testcases.OpenAccountTest  - OR Properties file loaded.
+INFO    2025-06-14 14:39:40,238 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Launching Chrome browser
+INFO    2025-06-14 14:39:43,047 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-06-14 14:39:43,242 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
+INFO    2025-06-14 14:39:43,246 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Finding an Element: addCustBtn_CSS
+INFO    2025-06-14 14:39:43,601 [main] org.sharfulumair.testcases.BankManagerLoginTest  - Finding an Element: addCustBtn_CSS
+INFO    2025-06-14 14:39:47,316 [main] org.sharfulumair.testcases.AddCustomerTest  - Launching Chrome browser
+INFO    2025-06-14 14:39:48,873 [main] org.sharfulumair.testcases.AddCustomerTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-06-14 14:39:49,054 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
+INFO    2025-06-14 14:39:49,232 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : addCustBtn_CSS with selector: .btn.btn-lg.tab[ng-class='btnClass1']
+INFO    2025-06-14 14:39:49,419 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : firstname_CSS with selector: input[placeholder='First Name'] and entered value: Sharful
+INFO    2025-06-14 14:39:49,716 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : lastname_CSS with selector: input[placeholder='Last Name'] and entered value: Umair
+INFO    2025-06-14 14:39:49,742 [main] org.sharfulumair.testcases.AddCustomerTest  - Typing in an Element : postcode_CSS with selector: input[ng-model='postCd'] and entered value: 1234.0
+INFO    2025-06-14 14:39:53,819 [main] org.sharfulumair.testcases.AddCustomerTest  - Clicking on an Element : addbtn_CSS with selector: button[type='submit']
+INFO    2025-06-14 14:39:55,644 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Chrome browser
+INFO    2025-06-14 14:39:57,155 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-06-14 14:39:57,278 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
+INFO    2025-06-14 14:39:57,418 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
+INFO    2025-06-14 14:39:57,675 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Harry Potter
+INFO    2025-06-14 14:39:57,686 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Rupee
+INFO    2025-06-14 14:40:01,829 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
+INFO    2025-06-14 14:40:03,506 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Firefox browser
+INFO    2025-06-14 14:40:12,095 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-06-14 14:40:12,207 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
+INFO    2025-06-14 14:40:12,498 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
+INFO    2025-06-14 14:40:12,765 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Ron Weasly
+INFO    2025-06-14 14:40:12,802 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Dollar
+INFO    2025-06-14 14:40:16,946 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
+INFO    2025-06-14 14:40:19,091 [main] org.sharfulumair.testcases.OpenAccountTest  - Launching Chrome browser
+INFO    2025-06-14 14:40:20,678 [main] org.sharfulumair.testcases.OpenAccountTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-06-14 14:40:20,858 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : bmlBtn_CSS with selector: .btn.btn-primary.btn-lg[ng-click='manager()']
+INFO    2025-06-14 14:40:21,004 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : openaccount_CSS with selector: button[ng-class='btnClass2']
+INFO    2025-06-14 14:40:21,196 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : customer_CSS and entered the value as :Albus Dumbledore
+INFO    2025-06-14 14:40:21,206 [main] org.sharfulumair.testcases.OpenAccountTest  - Typing in an Element : currency_CSS and entered the value as :Dollar
+INFO    2025-06-14 14:40:25,313 [main] org.sharfulumair.testcases.OpenAccountTest  - Clicking on an Element : process_CSS with selector: button[type='submit']
